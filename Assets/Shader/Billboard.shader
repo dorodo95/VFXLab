@@ -44,6 +44,7 @@
                 v2f o;
                 //o.vertex = UnityObjectToClipPos(v.vertex);
                 v.vertex.y -= _OffsetPivot;
+                v.vertex *= 0.25; //hack to decrease mesh size while keeping renderer bounds bigger
                 float3 worldPos = mul( (float3x3)unity_ObjectToWorld, v.vertex.xyz);
 
                 float3 worldCoord = float3(unity_ObjectToWorld._m03, unity_ObjectToWorld._m13, unity_ObjectToWorld._m23);

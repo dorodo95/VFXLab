@@ -5677,13 +5677,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.33013147, y: -0.063250266, z: 0.022177028, w: 0.94155234}
-  m_LocalPosition: {x: 0, y: 6.14, z: -7.61}
+  m_LocalRotation: {x: 0.3308767, y: 0, z: 0, w: 0.94367397}
+  m_LocalPosition: {x: 0, y: 5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 38.644, y: -7.6860003, z: 0}
+  m_LocalEulerAnglesHint: {x: 38.644, y: 0, z: 0}
 --- !u!114 &534669906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5696,7 +5696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d25006349b2d1844bbaf58c22ba7a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 184403162}
+  playerTarget: {fileID: 184403162}
 --- !u!1 &601684638
 GameObject:
   m_ObjectHideFlags: 0
@@ -5715,7 +5715,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &601684639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5922,7 +5922,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4.75
+  m_Radius: 6
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &888360850
 MonoBehaviour:
