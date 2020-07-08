@@ -169,7 +169,8 @@ public class PlayerMovement : MonoBehaviour
         Quaternion cameraShift = Quaternion.FromToRotation(Vector3.forward, camRef);
         movementAxis = cameraShift * movementAxis;
 
-        Quaternion playerShift = Quaternion.FromToRotation(Vector3.forward, movementAxis);
+        float playerAngle = Vector3.SignedAngle(Vector3.forward, movementAxis, Vector3.up);
+        Quaternion playerShift = Quaternion.AngleAxis(playerAngle, Vector3.up);
         
         if(movementAxis.magnitude > 0.05f)
         transform.rotation = playerShift;
